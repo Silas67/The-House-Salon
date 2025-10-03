@@ -7,7 +7,7 @@ export const WhyChooseUs = () => {
         className="w-full flex justify-between items-center  lg:gap-[70px] all:flex-col lg:flex-row-reverse max-mobile:gap-[40px] md:gap-[50px]  text-primary 
       "
       >
-        <div className="text-center md:hidden gap-[30px] w-full py-4 Stardom-font">
+        <div className="text-center md:hidden gap-[30px] w-full py-4 ">
           <p className=" text-[12px] font-bold">Why Us</p>{" "}
           <h1 className=" text-5xl md:w-[80%] all:w-full">
             The Art of Living Begins With Us
@@ -15,7 +15,7 @@ export const WhyChooseUs = () => {
         </div>
 
         <div className="relative w-[50%] h-[100%] overflow-hidden rounded-[10px] all:w-full">
-          <video src={"/assets/video1.mp4"} />
+          <video src={"/assets/video1.mp4"} autoPlay loop muted playsInline />
           <div className="absolute w-full h-full inset-[0]  opacity-30"></div>
         </div>
 

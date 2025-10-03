@@ -1,6 +1,8 @@
-import { GiBarbarian } from "react-icons/gi";
+import { GiBarbarian, GiDiamondHard, GiTeamUpgrade } from "react-icons/gi";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { IoMdPerson } from "react-icons/io";
+import { PiHouse } from "react-icons/pi";
 
 export const Navbar = [
   { href: "/about", label: "About" },
@@ -165,5 +167,79 @@ export const Products = [
     product: "Complete Clipper set",
     subtitle: "Comes with cooking pot",
     price: "N22000",
+  },
+];
+
+export const achievementsList2 = [
+  { prefix: <IoMdPerson />, value: "150", postfix: "+", metric: "Clients" },
+  {
+    prefix: <GiDiamondHard />,
+    value: "3",
+    postfix: "+",
+    metric: "Years Of Experience",
+  },
+  {
+    prefix: <GiTeamUpgrade />,
+    value: "20",
+    postfix: "+",
+    metric: "Team Members",
+  },
+  {
+    prefix: <PiHouse />,
+    value: "20",
+    postfix: "+",
+    metric: "Branches",
+  },
+];
+
+export const HairyAffairs = [
+  {
+    section: "Hairy Affairs",
+    menuItems: [
+      { name: "Barbing and Black Dye", price: "N3,500" },
+      { name: "Children", price: "N8000" },
+      { name: "Low Cut", price: "N2000" },
+      { name: "Fade", price: "N2000" },
+      { name: "Lining", price: "N1000" },
+      { name: "Skin", price: "N2000" },
+      { name: "Shaving and Jaw Cleansing", price: "N2000" },
+      { name: "Waves", price: "N4000" },
+      { name: "Afro", price: "N1,500" },
+      { name: "Flat Top", price: "N2,500" },
+    ],
+    image: "/assets/img4.jpg",
+  },
+];
+
+export const ChemicalTreatment = [
+  {
+    section: "Chemical Treatments",
+    menuItems: [
+      { name: "Barbing and Color Dye", price: "N6000" },
+      { name: "Double Processing Dye/Wash/Conditioning", price: "N10000" },
+      { name: "Beard Dye", price: "N6000" },
+      { name: "Texturizing Beard", price: "N3000" },
+      { name: "Texturizing Hair", price: "N3500" },
+    ],
+    image: "/assets/img7.jpg",
+  },
+];
+
+export const Specialist = [
+  {
+    section: "Specialist",
+    menuItems: [
+      { name: "DreadLocks", price: "N30,000" },
+      { name: "Short Locks", price: "N20,000" },
+      { name: "Short Cornrows", price: "N5,000" },
+      { name: "Long Cornrows", price: "N7,000" },
+      { name: "Bantu Knots", price: "N7,500" },
+      { name: "Sponge Twist", price: "N5,000" },
+      { name: "Braids", price: "N3,000" },
+      { name: "Braids Fade", price: "N3,500" },
+      { name: "Shortlocks Fade", price: "N9,000" },
+      { name: "Twist", price: "N6,000" },
+    ],
+    image: "/assets/img2.jpg",
   },
 ];
