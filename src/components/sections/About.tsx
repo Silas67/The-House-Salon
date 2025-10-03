@@ -26,7 +26,11 @@ export const About = () => {
         </div>
 
         <div>
-          <Button className="bg-secondary text-white" href="/about">
+          <Button
+            onClick={() => {}}
+            className="bg-secondary text-white"
+            href="/about"
+          >
             More About Us
           </Button>
         </div>
