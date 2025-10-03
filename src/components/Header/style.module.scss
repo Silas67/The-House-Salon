@@ -1,0 +1,113 @@
+.header {
+    position: absolute;
+    display: flex;
+    z-index: 50;
+    top: 0;
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 300;
+    box-sizing: border-box;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+
+        .el {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            padding: 15px;
+            cursor: pointer;
+
+            &:hover {
+                .indicator {
+                    transform: scale(1);
+                }
+            }
+
+            .indicator {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 45px;
+                left: 50%;
+                background-color: white;
+                border-radius: 50%;
+                transform: scale(0) translateX(-50%);
+                transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+            }
+        }
+
+        a {
+            cursor: pointer;
+        }
+    }
+}
+
+.headerButtonContainer {
+    transform: scale(0);
+    position: fixed;
+    right: 0px;
+    z-index: 40;
+
+    .button {
+        position: relative;
+        margin: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #d4af37;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background: var(--foreground); // make sure contrast is visible
+        transition: all 0.3s ease;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 2px;
+            background: var(--foreground);
+            transition: all 0.3s ease;
+        }
+
+        &::before {
+            top: -8px;
+        }
+
+        &::after {
+            top: 8px;
+        }
+    }
+
+    .burgerActive {
+        background: transparent;
+
+        &::before {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    }
+}
