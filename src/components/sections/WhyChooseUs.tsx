@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 export const WhyChooseUs = () => {
   return (
@@ -17,7 +15,7 @@ export const WhyChooseUs = () => {
         </div>
 
         <div className="relative w-[50%] h-[100%] overflow-hidden rounded-[10px] all:w-full">
-          <video src={} />
+          <video src={"/assets/video1.mp4"} />
           <div className="absolute w-full h-full inset-[0]  opacity-30"></div>
         </div>
 
