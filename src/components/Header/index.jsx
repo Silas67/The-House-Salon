@@ -59,7 +59,7 @@ export default function Index() {
           />
         </div>
 
-        <div className={`${styles.nav} text-sm`}>
+        <div className={`${styles.nav} text-sm `}>
           <Magnetic>
             <div className={styles.el}>
               <a href="/about">About</a>

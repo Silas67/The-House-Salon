@@ -15,21 +15,21 @@ export const WhyChooseUs = () => {
         </div>
 
         <div className="relative w-[50%] h-[100%] overflow-hidden rounded-[10px] all:w-full">
-          <video src={"/assets/video1.mp4"} />
+          <video src={"/assets/video1.mp4"} autoPlay/>
           <div className="absolute w-full h-full inset-[0]  opacity-30"></div>
         </div>
 
         <div className="grid lg:w-1/2 lg:gap-[30px] all:w-full py-4 ">
           <div>
-            <p className="underline underline-offset-2 text-[12px] text-secondary font-bold max-mobile:hidden lg:mb-2">
+            <p className="underline underline-offset-2 text-sm text-accent font-bold max-mobile:hidden lg:mb-2 Stardom-font">
               Why Us
             </p>{" "}
-            <h1 className="font-sans text-4xl text-primary md:w-[80%] all:w-full max-mobile:hidden">
+            <h1 className=" text-4xl text-primary md:w-[80%] all:w-full max-mobile:hidden Stardom-font">
               The Art of Living Begins With Us
             </h1>
           </div>
 
-          <p className="text-[12px]   all:w-full">
+          <p className="text-sm   all:w-full">
             Choosing the right real estate partner can make all the difference.
             At HillsApartment, we combine industry expertise with a commitment
             to client satisfaction, guiding you through every step of the

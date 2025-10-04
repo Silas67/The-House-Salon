@@ -4,12 +4,12 @@ import gsap from "gsap";
 import { Magnetic } from "./Magnetic";
 import Link from "next/link";
 
-export default function AnimatedButton({
+export default function Button({
   children,
   backgroundColor = "var(--accent)",
   className = "",
-  href,
-  onClick,
+  href = "/",
+  onClick = () => {},
   ...props
 }) {
   const circleRef = useRef(null);

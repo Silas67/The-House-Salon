@@ -21,7 +21,7 @@ export default function Footer() {
         className="lg:flex flex-col "
       >
         {/* Logo */}
-        <div className="flex items-center justify-between border-b-[1px]  pb-2 max-sm:flex-col max-sm:items-start ">
+        <div className="flex items-center justify-between border-b-[1px]  pb-2">
           <Image
             src={"/Logo.png"}
             alt="logo"
@@ -84,7 +84,7 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
-            <div className="flex items-start md:flex-col max-mobile:gap-[10px]">
+            <div className="flex items-start md:flex-col max-sm:gap-8">
               <h1 className="font-bold">Address</h1>
               <p className="text-neutral-400">
                 The House, No 15, New Mpape Mordern Market, BegerQuary, Mpape,

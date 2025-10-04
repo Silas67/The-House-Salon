@@ -22,7 +22,7 @@ export default function ProductsPage() {
           ad ratione eveniet, sunt impedit quisquam.
         </p>
       </motion.div>
-      <div className="grid lg:grid-cols-4 gap-12 p-4 w-full max-sm:grid-cols-2 md:grid-cols-2 place-content-center">
+      <div className="grid lg:grid-cols-4 gap-12 p-4 w-full max-sm:grid-cols-1 md:grid-cols-2 place-content-center">
         {Products.map((item, id) => (
           <motion.div
             initial={{ y: 20, opacity: 0 }}
