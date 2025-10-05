@@ -9,7 +9,7 @@ export default function Index({data, isActive, setSelectedIndicator}) {
   
     return (
       <motion.div 
-        className={styles.link} 
+        className={`Stardom-font ${styles.link}`} 
         onMouseEnter={() => {setSelectedIndicator(href)}} 
         custom={index} 
         variants={slide} 

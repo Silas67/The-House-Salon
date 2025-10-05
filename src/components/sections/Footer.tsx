@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import { Btns, footerLinks } from "@/components/constant/index";
+import { Btns, footerLinks, textSlide } from "@/components/constant/index";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -14,8 +14,9 @@ export default function Footer() {
   return (
     <footer className="w-full h-fit pt-16 pb-4  flex flex-col px-12 max-sm:px-6 bg-primary gap-8 text-white">
       <motion.div
-        initial={{ x: 20, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        variants={textSlide}
+        initial="initial"
+        whileInView="enter"
         transition={{ duration: 1, ease: "easeInOut" }}
         viewport={{ once: true }}
         className="lg:flex flex-col "

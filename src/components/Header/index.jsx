@@ -9,6 +9,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/components/common/Button";
 import { Magnetic } from "@/components/common/Magnetic";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Index() {
   const header = useRef(null);
@@ -49,7 +51,7 @@ export default function Index() {
   return (
     <>
       <div ref={header} className={styles.header}>
-        <div className={styles.logo}>
+        <Link href ={"/"} className={styles.logo}>
           <Image
             src={"/Logo.png"}
             width={100}
@@ -57,7 +59,7 @@ export default function Index() {
             className="w-[50px] h-[50px] invert-100"
             alt="Logo"
           />
-        </div>
+        </Link>
 
         <div className={`${styles.nav} text-sm `}>
           <Magnetic>

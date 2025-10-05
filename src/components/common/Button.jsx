@@ -8,7 +8,7 @@ export default function Button({
   children,
   backgroundColor = "var(--accent)",
   className = "",
-  href = "/",
+  href = "",
   onClick = () => {},
   ...props
 }) {

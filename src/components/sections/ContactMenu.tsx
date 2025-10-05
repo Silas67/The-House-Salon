@@ -1,11 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../common/Button";
+import { motion } from "framer-motion";
 
 export const ContactMenu = () => {
   return (
     <div className="min-h-[80vh] w-full text-primary  p-8 bg-foreground space-y-28">
-      <div className="grid md:grid-cols-2 border-t border-primary">
+      <motion.div 
+      initial = {{scaleX: 0}}
+      animate = {{scaleX: 1}}
+      transition={{duration:1, ease:"anticipate"}}
+      className="grid md:grid-cols-2 border-t border-primary">
         <h2 className="text-lg font-semibold mb-2">Send us an Email</h2>
         <div className="grid md:grid-cols-2 space-x-4">
           <form className="flex flex-col gap-8 p-8">
@@ -55,7 +60,7 @@ export const ContactMenu = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="grid md:grid-cols-2 border-t border-primary">
         <h2 className="text-lg font-semibold mb-2">Join The Team</h2>

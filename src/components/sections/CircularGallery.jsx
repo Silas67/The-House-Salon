@@ -288,31 +288,53 @@ class Media {
       this.isBefore = this.isAfter = false;
     }
   }
-  onResize({ screen, viewport } = {}) {
-    if (screen) this.screen = screen;
-    if (viewport) {
-      this.viewport = viewport;
-      if (this.plane.program.uniforms.uViewportSizes) {
-        this.plane.program.uniforms.uViewportSizes.value = [
-          this.viewport.width,
-          this.viewport.height,
-        ];
-      }
+ onResize({ screen, viewport } = {}) {
+  if (screen) this.screen = screen;
+  if (viewport) {
+    this.viewport = viewport;
+    if (this.plane.program.uniforms.uViewportSizes) {
+      this.plane.program.uniforms.uViewportSizes.value = [
+        this.viewport.width,
+        this.viewport.height,
+      ];
     }
-    this.scale = this.screen.height / 1500;
-    this.plane.scale.y =
-      (this.viewport.height * (900 * this.scale)) / this.screen.height;
-    this.plane.scale.x =
-      (this.viewport.width * (700 * this.scale)) / this.screen.width;
-    this.plane.program.uniforms.uPlaneSizes.value = [
-      this.plane.scale.x,
-      this.plane.scale.y,
-    ];
-    this.padding = 2;
-    this.width = this.plane.scale.x + this.padding;
-    this.widthTotal = this.width * this.length;
-    this.x = this.width * this.index;
   }
+
+  // ✅ Screen categories
+  const width = this.screen.width;
+  const isMobile = width < 640;
+  const isTablet = width >= 640 && width < 1024;
+  const isDesktop = width >= 1024;
+
+  // ✅ Base scaling logic
+  this.scale = this.screen.height / 1500;
+
+  // ✅ Apply gentler multipliers (less shrink)
+  let scaleMultiplier = 1;
+  if (isMobile) scaleMultiplier = 0.75; // was 0.5 before
+  else if (isTablet) scaleMultiplier = 0.9;
+  else if (isDesktop) scaleMultiplier = 1;
+
+  // ✅ Apply updated scaling
+  this.plane.scale.y =
+    (this.viewport.height * (900 * this.scale * scaleMultiplier)) /
+    this.screen.height;
+  this.plane.scale.x =
+    (this.viewport.width * (700 * this.scale * scaleMultiplier)) /
+    this.screen.width;
+
+  this.plane.program.uniforms.uPlaneSizes.value = [
+    this.plane.scale.x,
+    this.plane.scale.y,
+  ];
+
+  this.padding = 2;
+  this.width = this.plane.scale.x + this.padding;
+  this.widthTotal = this.width * this.length;
+  this.x = this.width * this.index;
+}
+
+
 }
 
 class App {

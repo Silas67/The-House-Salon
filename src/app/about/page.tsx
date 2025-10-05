@@ -17,9 +17,9 @@ const Page = () => {
       <section>
         <WhyChooseUs />
       </section>
-      {/* <section>
+      <section>
         <Banner />
-      </section> */}
+      </section>
       <section>
         <CallToAction />
       </section>
