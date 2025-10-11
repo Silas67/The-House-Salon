@@ -318,3 +318,108 @@ export const textSlide = {
   },
 };
 
+export const items = [
+    {
+      id: "1",
+      img: "./assets/img1.jpg",
+      url: "/",
+      height: 400,
+    },
+    {
+      id: "2",
+      img: "./assets/img2.jpg",
+      url: "/",
+      height: 250,
+    },
+    {
+      id: "3",
+      img: "./assets/img3.jpg",
+      url: "/",
+      height: 600,
+    },
+    {
+      id: "4",
+      img: "./assets/img4.jpg",
+      url: "/",
+      height: 300,
+    },
+    {
+      id: "5",
+      img: "./assets/img5.jpg",
+      url: "/",
+      height: 500,
+    },
+    {
+      id: "6",
+      img: "./assets/img6.jpg",
+      url: "/",
+      height: 400,
+    },
+    {
+      id: "7",
+      img: "./assets/img7.jpg",
+      url: "/",
+      height: 350,
+    },
+    {
+      id: "8",
+      img: "./assets/img8.jpg",
+      url: "/",
+      height: 200,
+    },
+    {
+      id: "9",
+      img: "./assets/img9.jpg",
+      url: "/",
+      height: 500,
+    },
+    {
+      id: "10",
+      img: "./assets/img5.jpg",
+      url: "/",
+      height: 350,
+    },
+    {
+      id: "11",
+      img: "./assets/img7.jpg",
+      url: "/",
+      height: 200,
+    },
+    {
+      id: "12",
+      img: "./assets/img3.jpg",
+      url: "/",
+      height: 500,
+    },
+    {
+      id: "13",
+      img: "./assets/img1.jpg",
+      url: "/",
+      height: 500,
+    },
+    {
+      id: "14",
+      img: "./assets/img9.jpg",
+      url: "/",
+      height: 600,
+    },
+    {
+      id: "15",
+      img: "./assets/img2.jpg",
+      url: "/",
+      height: 400,
+    },
+    {
+      id: "16",
+      img: "./assets/img4.jpg",
+      url: "/",
+      height: 300,
+    },
+     {
+      id: "17",
+      img: "./assets/img6.jpg",
+      url: "/",
+      height: 150,
+    },
+  ];
+

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { testimonials, textSlide } from "../constant";
@@ -18,26 +20,33 @@ export default function Testimonials() {
         >
           Testimonials
         </motion.p>
+
         <SplitText duration={1} delay={0}>
-          <h1 className=" text-5xl">Our Customer&apos;s Take</h1>
+          <h1 className="text-5xl">Our Customer&apos;s Take</h1>
         </SplitText>
-      </div>{" "}
+      </div>
+
       <div>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry className="flex " style={{ padding: "12px" }}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+        >
+          <Masonry className="flex" style={{ padding: "12px" }}>
             {testimonials.map((t, idx) => (
               <motion.div
+                key={t.name}
                 variants={textSlide}
                 initial="initial"
                 whileInView="enter"
-                transition={{ duration: 1, delay:idx*0.2, ease: "anticipate" }}
+                transition={{
+                  duration: 1,
+                  delay: idx * 0.2,
+                  ease: "anticipate",
+                }}
                 viewport={{ once: true }}
-                key={t.name}
-                className="border border-muted-foreground rounded-md"
-                style={{ padding: "8px" }}
+                className="border border-muted-foreground rounded-md p-3"
               >
                 <p className="text-sm">{t.word}</p>
-                <h4 className="font-bold mt-4">{t.name}</h4>
+                <p className="font-bold mt-4">{t.name}</p>
                 <p className="text-xs text-muted-foreground">{t.job}</p>
               </motion.div>
             ))}

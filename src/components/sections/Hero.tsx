@@ -27,12 +27,12 @@ const Hero = () => {
             Luxury Grooming for the Modern Gentleman
           </h1>
 
-          <p className="text-muted-foreground md:w-[700px] w-[400px] max-sm:scale-[0.9]">
+          <p className="text-white md:w-[500px] w-[400px] max-sm:scale-[0.9]">
             The House is a luxury barbing salon inspired by the need to redefine
             the typical barbershop experience in Abuja.
           </p>
 
-          <Button className="bg-secondary max-sm:ml-4" href="/appointment">
+          <Button className="bg-secondary max-sm:ml-4" href="/booking-page">
             {" "}
             Book Now
           </Button>

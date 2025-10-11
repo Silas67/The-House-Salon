@@ -84,7 +84,7 @@ const RollingGallery = ({
           className="absolute top-0 left-0 h-full lg:w-[200px]"
           style={{
             background:
-              "linear-gradient(to left, rgba(0,0,0,0) 0%, var(--foreground) 100%)",
+              "linear-gradient(to left, rgba(0,0,0,0) 0%, var(--background) 100%)",
             zIndex: 50,
           }}
         />
@@ -92,7 +92,7 @@ const RollingGallery = ({
           className="absolute top-0 right-0 h-full lg:w-[200px]"
           style={{
             background:
-              "linear-gradient(to right, rgba(0,0,0,0) 0%, var(--foreground) 100%)",
+              "linear-gradient(to right, rgba(0,0,0,0) 0%, var(--background) 100%)",
             zIndex: 50,
           }}
         />

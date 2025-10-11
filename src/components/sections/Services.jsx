@@ -5,10 +5,11 @@ import Button from "../common/Button";
 import { motion } from "framer-motion";
 import SplitText from "../common/SplitText";
 import { textSlide } from "../constant";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Services() {
   return (
-    <div className="w-full flex items-center justify-center p-8 lg:py-36 bg-foreground h-full">
+    <div className="w-full flex items-center justify-center p-8 lg:py-36 h-full text-foreground">
       <motion.div
         variants={textSlide}
         initial="initial"
@@ -19,12 +20,12 @@ export default function Services() {
       >
         <ImageContainer
           src="/assets/img1.jpg"
-          className="w-[450px] h-[700px] border-4 border-primary"
+          className="w-[450px] h-[700px] border-4 border-foreground"
         />
       </motion.div>
 
       {/* Heading */}
-      <div className="flex flex-col items-center justify-center text-primary max-w-[100vw]">
+      <div className="flex flex-col items-center justify-center max-w-[100vw]">
         <div className=" flex items-center justify-center flex-col max-sm:gap-8 gap-4 text-center max-sm:px-4">
           <SplitText className="Stardom-font text-3xl font-bold" duration={1}>
             What We Do
@@ -44,18 +45,51 @@ export default function Services() {
             edge.
           </motion.p>
         </div>
-        
+
         <motion.div
           variants={textSlide}
           initial="initial"
           whileInView="enter"
           transition={{ duration: 1, delay: 0.5, ease: "anticipate" }}
           viewport={{ once: true }}
-          className="flex items-center justify-center flex-col gap-4"
+          className="flex items-center justify-center flex-col gap-8"
         >
-          <RollingGallery autoplay={false} />
+          <div>
+            <RollingGallery autoplay={false} />
+            <div className="flex items-center justify-center  gap-2 text-xs">
+              <motion.div
+                initial={{ x: 0, opacity: 1 }}
+                whileInView={{ x: -10, opacity: 0 }}
+                transition={{
+                  duration: 1.5,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+              >
+                <FaArrowLeft />
+              </motion.div>
+              <h1 className="text-muted-foreground">Swipe for More</h1>
+              <motion.div
+                initial={{ x: 0, opacity: 1 }}
+                whileInView={{ x: 10, opacity: 0 }}
+                transition={{
+                  duration: 1.5,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+              >
+                <FaArrowRight />
+              </motion.div>
+            </div>
+          </div>
+
           <div className="">
-            <Button className="bg-primary text-white" href="/services">
+            <Button
+              className="bg-primary-foreground text-white"
+              href="/services"
+            >
               Learn More
             </Button>
           </div>

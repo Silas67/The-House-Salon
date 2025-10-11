@@ -8,7 +8,7 @@ import { textSlide } from "../constant";
 
 export const About = () => {
   return (
-    <div className=" w-full flex items-center justify-center lg:p-16 lg:h-[100vh] max-sm:flex-col-reverse bg-primary text-primary-foreground max-sm:py-16">
+    <div className=" w-full flex items-center justify-center lg:p-16 lg:h-[100vh] max-sm:flex-col-reverse bg-primary-foreground text-primary max-sm:py-16">
       <div className="w-full flex lg:items-start items-center justify-center flex-col gap-4 lg:pr-8">
         <div className="max-sm:text-center">
           <SplitText splitType="lines" duration={1}>
@@ -20,7 +20,7 @@ export const About = () => {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.6 }}
-              className="w-full origin-left bg-primary-foreground h-[6px] rounded-full"
+              className="w-full origin-left bg-primary h-[6px] rounded-full"
             ></motion.div>
 
             <motion.p
@@ -50,7 +50,8 @@ export const About = () => {
         <div>
           <Button
             onClick={() => {}}
-            className="bg-secondary text-white"
+            backgroundColor="var(--primary-foreground)"
+            className="bg-primary text-white border-primary"
             href="/about"
           >
             More About Us
@@ -62,13 +63,13 @@ export const About = () => {
         <div className="relative top-10 scale-[0.95]">
           <ImageContainer
             src="/assets/img7.jpg"
-            className="border-4 border-foreground "
+            className="border-4 border-primary "
           />
         </div>
         <div className="relative -top-10 scale-[1] -left-20">
           <ImageContainer
             src="/assets/img4.jpg"
-            className="border-t-4 border-foreground border-r-4 border-b-4 border-b-foreground"
+            className="border-t-4 border-primary border-r-4 border-b-4 border-b-primary"
           />
         </div>
       </div>

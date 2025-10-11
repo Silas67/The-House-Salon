@@ -10,7 +10,7 @@ export const HairMenu = () => {
       {HairyAffairs.map((item, id) => (
         <div key={id} className="border-t border-primary w-full flex items-stretch justify-between gap-4">
           <div className="py-4 flex flex-col gap-2 pr-12 max-sm:pr-0">
-            <h1 className="text-sm font-bold uppercase">{item.section}</h1>
+            <h1 className="text-sm font-bold text-white uppercase">{item.section}</h1>
             <div className="grid grid-cols-2 max-sm:grid-cols-1">
               <div className="min-w-[200px] max-sm:hidden"></div>
               <div>
@@ -33,7 +33,7 @@ export const HairMenu = () => {
       {ChemicalTreatment.map((item, id) => (
         <div key={id} className="border-t border-primary w-full flex items-stretch justify-between gap-4">
           <div className="py-4 flex flex-col gap-2 pr-12 max-sm:pr-0">
-            <h1 className="text-sm font-bold uppercase">{item.section}</h1>
+            <h1 className="text-sm font-bold text-white uppercase">{item.section}</h1>
             <div className="grid grid-cols-2 max-sm:grid-cols-1">
               <div className="min-w-[200px] max-sm:hidden"></div>
               <div className="">
@@ -56,7 +56,7 @@ export const HairMenu = () => {
      {Specialist.map((item, id) => (
         <div key={id} className="border-t border-primary w-full flex items-stretch justify-between gap-4">
           <div className="py-4 flex flex-col gap-2 pr-12 max-sm:pr-0">
-            <h1 className="text-sm font-bold uppercase">{item.section}</h1>
+            <h1 className="text-sm font-bold text-white uppercase">{item.section}</h1>
             <div className="grid grid-cols-2 max-sm:grid-cols-1">
               <div className="min-w-[200px] max-sm:hidden"></div>
               <div className="">

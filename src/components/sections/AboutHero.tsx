@@ -4,11 +4,11 @@ import SplitText from "../common/SplitText";
 import { motion } from "framer-motion";
 import { textSlide } from "../constant";
 
-export default function zAboutHero() {
+export default function AboutHero() {
   return (
-    <div className="min-h-[80vh] w-full text-white  p-8 bg-primary space-y-28">
+    <div className="min-h-[80vh] w-full text-text  p-8 bg-primary space-y-28">
       <div className="max-w-4xl flex items-start flex-col mt-28 Stardom-font gap-16">
-        <SplitText>About</SplitText>
+        <SplitText className="text-white">About</SplitText>
         <SplitText className="text-6xl max-sm:text-4xl" textAlign="left">
           Get To Know Why This is Barbershop With A Diffrence
         </SplitText>
@@ -18,7 +18,7 @@ export default function zAboutHero() {
         <div className="flex-1">
           <ImageContainer
             src="/assets/img5.jpg"
-            className="w-full h-[500px] "
+            className="w-full h-[500px] border-4 border-foreground"
           />
         </div>
         <div className="grid grid-cols-2 w-[60%] space-x-8 text-justiy max-sm:grid-cols-1 max-sm:space-y-4 max-sm:w-full">

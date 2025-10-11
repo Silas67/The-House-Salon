@@ -12,7 +12,7 @@ export default function Footer() {
     setOpenSection(openSection === index ? null : index);
   };
   return (
-    <footer className="w-full h-fit pt-16 pb-4  flex flex-col px-12 max-sm:px-6 bg-primary gap-8 text-white">
+    <footer className="w-full h-fit pt-16 pb-4  flex flex-col px-12 max-sm:px-6 bg-foreground gap-8 text-primary">
       <motion.div
         variants={textSlide}
         initial="initial"
@@ -26,7 +26,7 @@ export default function Footer() {
           <Image
             src={"/Logo.png"}
             alt="logo"
-            className=" object-cover invert-75"
+            className=" object-cover invert-100"
             width={50}
             height={50}
           />
@@ -60,14 +60,14 @@ export default function Footer() {
 
                 {/* Collapsible Links */}
                 <ul
-                  className={`mt-2 space-y-2 text-neutral-400 text-sm overflow-hidden lg:overflow-visible transition-all duration-300 ease-in-out ${
+                  className={`mt-2 space-y-2 text-white text-sm overflow-hidden lg:overflow-visible transition-all duration-300 ease-in-out ${
                     openSection === id ? "max-h-full p-2" : " max-h-0 p-0"
                   }`}
                 >
                   {footer.link.map((link, index) => (
                     <li
                       key={index}
-                      className="cursor-pointer hover:text-white hover:underline transition-all duration-300"
+                      className="cursor-pointer hover:text-primary hover:underline underline-offset-2 transition-all duration-500"
                     >
                       {link.href.startsWith("https") ? (
                         <a
@@ -87,7 +87,7 @@ export default function Footer() {
             ))}
             <div className="flex items-start md:flex-col max-sm:gap-8">
               <h1 className="font-bold">Address</h1>
-              <p className="text-neutral-400">
+              <p className="text-white">
                 The House, No 15, New Mpape Mordern Market, BegerQuary, Mpape,
                 Abuja
               </p>
@@ -106,7 +106,7 @@ export default function Footer() {
                 name="Email"
                 id="Email"
                 placeholder="Your email"
-                className="w-full border-b border-white text-accent2 relative  transition-all duration-300 pb-2 outline-none"
+                className="w-full border-b border-white text-white relative  transition-all duration-300 pb-2 outline-none"
               />
 
               <button className="absolute rounded-3xl text-primary transition-colors right-[0] bg-accent2 p-2 text-sm bottom-[0] mb-2">

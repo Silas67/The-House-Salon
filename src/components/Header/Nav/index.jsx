@@ -42,7 +42,7 @@ export default function index() {
       exit="exit"
       className={styles.menu}
     >
-      <div className={styles.body}>
+      <div className={`${styles.body} `}>
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname);

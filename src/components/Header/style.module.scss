@@ -69,7 +69,7 @@
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background-color: #d4af37;
+        background-color: #1c1b19;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -80,7 +80,8 @@
         position: relative;
         width: 24px;
         height: 2px;
-        background: var(--foreground); // make sure contrast is visible
+        background: white; // make sure contrast is visible
+
         transition: all 0.3s ease;
 
         &::before,
@@ -90,7 +91,7 @@
             left: 0;
             width: 24px;
             height: 2px;
-            background: var(--foreground);
+            background: white;
             transition: all 0.3s ease;
         }
 

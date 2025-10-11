@@ -1,6 +1,6 @@
 .menu {
     height: 100vh;
-    background-color: #1a1a2e;
+    background-color: #b08d57;
     position: fixed;
     right: 0;
     top: 0;
@@ -36,6 +36,19 @@
                 font-weight: 300;
             }
 
+             @media (width < 40rem /* 640px */) {
+                font-size: 30px;
+                margin-top: 200px;
+            }
+
+             @media (width < 24rem /* 640px */) {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+
+
+
         }
     }
 }
+

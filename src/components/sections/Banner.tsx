@@ -4,8 +4,8 @@ import AnimatedNumbers from "react-animated-numbers";
 
 const Banner = () => {
   return (
-    <div className="w-full flex gap-[20px] bg-foreground py-12 items-center justify-around lg:px-[70px] px-[40px] flex-col md:flex-row">
-      <div className="w-full  text-4xl font-black text-secondary max-sm:text-center Stardom-font">
+    <div className="w-full flex gap-[20px] bg-background text-text py-12 items-center justify-around lg:px-[70px] px-[40px] flex-col md:flex-row">
+      <div className="w-full  text-4xl font-black  max-sm:text-center Stardom-font">
         
           <h1>
             Take A Look <br />

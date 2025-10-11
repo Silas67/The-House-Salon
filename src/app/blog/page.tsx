@@ -46,7 +46,7 @@ const Blog = () => {
               </div>
 
               {/* Content */}
-              <Link href={"/"}>
+              <Link href={`/blog/${blog.title}`}>
                 <div className="p-4 space-y-2 text-primary">
                   <h1 className="text-xl font-bold">{blog.title}</h1>
                   <div className="text-[#5c5c5c] text-sm flex items-start gap-1">

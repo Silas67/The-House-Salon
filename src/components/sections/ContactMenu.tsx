@@ -2,15 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Button from "../common/Button";
 import { motion } from "framer-motion";
+import { textSlide } from "../constant";
 
 export const ContactMenu = () => {
   return (
     <div className="min-h-[80vh] w-full text-primary  p-8 bg-foreground space-y-28">
-      <motion.div 
-      initial = {{scaleX: 0}}
-      animate = {{scaleX: 1}}
-      transition={{duration:1, ease:"anticipate"}}
-      className="grid md:grid-cols-2 border-t border-primary">
+      <motion.div
+        variants={textSlide}
+        initial="initial"
+        whileInView="enter"
+        transition={{ duration: 1, ease: "anticipate" }}
+        viewport={{ once: true }}
+        className="grid md:grid-cols-2 border-t border-primary"
+      >
         <h2 className="text-lg font-semibold mb-2">Send us an Email</h2>
         <div className="grid md:grid-cols-2 space-x-4">
           <form className="flex flex-col gap-8 p-8">
@@ -93,7 +97,7 @@ export const ContactMenu = () => {
       <div className="grid md:grid-cols-2 border-t border-primary  ">
         <h2 className="text-lg font-semibold mb-2">Contact Info</h2>
 
-        <div className="py-8 text-neutral-600 md:w-[70%] md:justify-self-end space-y-4">
+        <div className="py-8 text-neutral-300 md:w-[70%] md:justify-self-end space-y-4">
           <div className="border-b border-border p-2 font-bold flex items-center justify-between ">
             <h1>Email Address</h1>
             <h1>chibukesilas@gmail.com</h1>
@@ -104,7 +108,10 @@ export const ContactMenu = () => {
           </div>
           <div className="border-b border-border p-2 font-bold grid grid-cols-2 gap-8">
             <h1>Address</h1>
-            <h1 className="justify-self-end text-sm">The House No 15, New Mpape Mordern Market, BegerQuary, Mpape, Abuja</h1>
+            <h1 className="justify-self-end text-sm">
+              The House No 15, New Mpape Mordern Market, BegerQuary, Mpape,
+              Abuja
+            </h1>
           </div>
           <div className="border-b border-border p-2 font-bold flex items-center justify-between ">
             <h1>Email Address</h1>

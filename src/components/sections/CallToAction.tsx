@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CallToAction = () => {
   return (
-    <div className="relative w-full h-[30vh text-accent-foreground flex items-center justify-center flex-col gap-4 text-center py-12">
+    <div className="relative w-full lg:h-[50vh] text-accent flex items-center justify-center flex-col gap-4 text-center py-12">
       <div className="absolute w-full h-full -z-10">
         <Image
           src={"/assets/Hero2.jpg"}
@@ -25,10 +25,9 @@ const CallToAction = () => {
 
       <Rounded
         href={"/contact"}
-        invert={false}
         onClick={() => {}}
-        className="bg-primary"
-        backgroundColor="var(--secondary)"
+        className="bg-primary text-white"
+        backgroundColor="var(--foreground)"
       >
         <p>Book An Appointment</p>
       </Rounded>

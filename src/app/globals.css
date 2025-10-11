@@ -4,33 +4,34 @@
   --radius: 0.625rem;
 
   /* Base */
-  --background: #0d0d0d; /* near-black navy charcoal */
-  --foreground: #f5f5f5; /* light text */
-  --text: #f5f5f5;
+  --background: #f8f5ef; /* soft cream background */
+  --foreground: #1c1b19; /* espresso text */
+  --text: #1c1b19;
 
   /* UI Elements */
-  --card: #1a1a2e; /* deep navy */
-  --card-foreground: #f5f5f5;
-  --border: #2d2d44; /* subtle navy-gray border */
-  --input: #2d2d44;
+  --card: #fffaf3; /* ivory card background */
+  --card-foreground: #1c1b19;
+  --border: #e6dfd1; /* subtle beige border */
+  --input: #e6dfd1;
 
   /* Brand Colors */
-  --primary: #1a1a2e; /* signature deep navy */
-  --primary-foreground: #fdfcf9; /* ivory text on primary */
-  --secondary: #d4af37; /* rich gold */
-  --secondary-foreground: #1a1a2e;
-  --accent: #b76e79; /* rose gold / muted red accent */
-  --accent-foreground: #fdfcf9;
+  --primary: #c5a572; /* elegant muted gold */
+  --primary-foreground: #1c1b19; /* dark text on gold */
+  --secondary: #b08d57; /* rich bronze */
+  --secondary-foreground: #fdfcf9; /* light text */
+  --accent: #d6b88a; /* champagne highlight */
+  --accent-foreground: #1c1b19;
 
   /* States */
-  --muted: #2e2e3f;
-  --muted-foreground: #c9c9c9;
+  --muted: #ede8e0; /* soft gray-beige */
+  --muted-foreground: #6f655a; /* taupe text */
   --destructive: #b34d4d; /* muted wine red */
-  --ring: #d4af37; /* gold ring focus */
+  --ring: #c5a572; /* gold focus ring */
 
   /* Light variant */
-  --light: #fafafa;
+  --light: #fffcf7; /* creamy white for highlights */
 }
+
 
 @theme inline {
   --color-background: var(--background);

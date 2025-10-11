@@ -9,7 +9,7 @@ export const WhyChooseUs = () => {
       "
       >
         <div className="relative md:w-[50%] h-[100%] overflow-hidden rounded-[10px] all:w-full">
-          <video src={"/assets/video1.mp4"} />
+          <video src={"/assets/video1.mp4"} autoPlay loop />
           <div className="absolute w-full h-full inset-[0]  opacity-30"></div>
         </div>
 

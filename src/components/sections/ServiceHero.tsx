@@ -2,9 +2,9 @@ import React from "react";
 
 export const ServiceHero = () => {
   return (
-    <div className="min-h-[50vh] w-full text-white  p-8 bg-primary space-y-28">
+    <div className="min-h-[50vh] w-full text-text  p-8 bg-primary space-y-28">
       <div className="max-w-4xl flex items-start flex-col mt-28 Stardom-font gap-2">
-        <p className="text-accent">Our Services</p>
+        <p className="text-white">Our Services</p>
         <h1 className="text-6xl max-sm:text-4xl">
           Come to the luxury Barbershop for a great experience
         </h1>
