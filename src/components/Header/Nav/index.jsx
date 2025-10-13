@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "../animation";
-import Link from "./Link";
+import Link from "./Linked";
 import Curve from "./Curve";
 import Footer from "./Footer";
 
@@ -19,6 +19,10 @@ const navItems = [
   {
     title: "About",
     href: "/about",
+  },
+  {
+    title: "Media",
+    href: "/gallery",
   },
   {
     title: "Blog",

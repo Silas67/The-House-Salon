@@ -9,7 +9,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Services() {
   return (
-    <div className="w-full flex items-center justify-center p-8 lg:py-36 h-full text-foreground">
+    <div className="w-full flex items-center justify-center p-8 lg:py-44 h-full text-foreground">
       <motion.div
         variants={textSlide}
         initial="initial"

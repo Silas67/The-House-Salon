@@ -17,7 +17,7 @@ export default function Project() {
   }, []);
 
   return (
-    <div className="py-36 text-foreground lg:pt-24">
+    <div className="py-36 lg:py-44 text-foreground lg:pt-24">
       <div className="text-center gap-2 flex items-center justify-center flex-col Stardom-font max-sm:p-2">
         <motion.p
           variants={textSlide}

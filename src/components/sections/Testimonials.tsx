@@ -8,7 +8,7 @@ import SplitText from "../common/SplitText";
 
 export default function Testimonials() {
   return (
-    <div className="bg-foreground text-background py-24 space-y-8">
+    <div className="bg-foreground text-background py-36 space-y-24">
       <div className="text-center gap-2 flex items-center justify-center flex-col Stardom-font">
         <motion.p
           variants={textSlide}

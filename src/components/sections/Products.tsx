@@ -8,7 +8,7 @@ import Button from "../common/Button";
 export default function ProductsPage() {
   const Stagger = 0.2;
   return (
-    <div className="text-center text-accent-foreground bg-accent lg:py-24 p-8 space-y-16">
+    <div className="text-center text-accent-foreground bg-accent py-36 p-8 space-y-24">
       <div
         className="text-center flex items-center justify-center flex-col gap-[8px]"
       >
@@ -30,7 +30,7 @@ export default function ProductsPage() {
             key={id}
             className=" flex flex-col items-center justify-center"
           >
-            <div className="relative w-[300px] h-[300px] overflow-hidden shadow-xl rounded-lg">
+            <div className="relative w-[250px] h-[250px] overflow-hidden shadow-xl rounded-lg">
               <Image
                 src={item.img}
                 alt={item.product || "Product image"}

@@ -8,7 +8,7 @@ import { textSlide } from "../constant";
 
 export const About = () => {
   return (
-    <div className=" w-full flex items-center justify-center lg:p-16 lg:h-[100vh] max-sm:flex-col-reverse bg-primary-foreground text-primary max-sm:py-16">
+    <div className=" w-full flex items-center justify-center lg:px-16 lg:py-44 lg:min-h-[100vh] max-sm:flex-col-reverse bg-primary-foreground text-primary max-sm:py-16">
       <div className="w-full flex lg:items-start items-center justify-center flex-col gap-4 lg:pr-8">
         <div className="max-sm:text-center">
           <SplitText splitType="lines" duration={1}>
