@@ -29,14 +29,7 @@ export default function AboutHero() {
             viewport={{once: true}}
             transition={{ duration: 1, ease: "anticipate" }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            quaerat maxime facilis, accusamus quo adipisci aliquid vero,
-            molestiae laboriosam esse tempore reiciendis! Quam vero fugit nam
-            laudantium, veritatis voluptas? Amet!.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Numquam quaerat maxime facilis,
-            accusamus quo adipisci aliquid vero, molestiae laboriosam esse
-            tempore reiciendis! Quam vero fugit nam laudantium, veritatis
-            voluptas? Amet!
+            At The House, we believe grooming is more than just a routine—it’s a ritual of confidence, class, and self-expression. Founded with the vision to redefine men’s and women’s grooming, our space blends modern craftsmanship with timeless sophistication. <p className="mt-4">Every detail, from the soft hum of clippers to the subtle scent of our premium products, is designed to help you unwind while our professionals bring out your best look. Whether it’s your first visit or your fiftieth, we aim to make you feel at home—refreshed, recharged, and refined.</p>
           </motion.p>
           <motion.p
             variants={textSlide}
@@ -46,14 +39,8 @@ export default function AboutHero() {
             transition={{ duration: 1, ease: "anticipate", delay: 0.5 }}
             className="max-sm:hidden"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            quaerat maxime facilis, accusamus quo adipisci aliquid vero,
-            molestiae laboriosam esse tempore reiciendis! Quam vero fugit nam
-            laudantium, veritatis voluptas? Amet!.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Numquam quaerat maxime facilis,
-            accusamus quo adipisci aliquid vero, molestiae laboriosam esse
-            tempore reiciendis! Quam vero fugit nam laudantium, veritatis
-            voluptas? Amet!
+            Beyond our chairs, we’re a community that celebrates individuality. Our clients don’t just walk out looking good—they leave feeling empowered. At The House, we don’t just style hair, we shape confidence. 
+            Step inside and you’ll see—it’s not just about the cut, the trim, or the fade. It’s about the experience. From the first warm greeting to the final mirror check, we’re dedicated to creating a space where style meets serenity. Every appointment is an opportunity to pause from the noise of everyday life and reconnect with yourself. Because at The House, looking good is just the beginning—feeling good is the goal.
           </motion.p>
         </div>
       </div>

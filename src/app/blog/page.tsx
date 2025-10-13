@@ -36,7 +36,7 @@ const Blog = () => {
               className="w-[300px] rounded-[10px] overflow-hidden bg-white shadow-md transition-transform duration-300 group scale-[0.95]"
             >
               {/* Image */}
-              <div className="h-[200px] w-full overflow-hidden relative">
+              <div className="h-[250px] w-full overflow-hidden relative">
                 <Image
                   src={blog.image}
                   alt="blog image"

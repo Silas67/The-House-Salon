@@ -250,7 +250,7 @@ export const blogs = [
     slug: "live-sustainably",
     excerpt:
       "A Haircut does more than change your look, It instantly changes your energy. Walking out of the saloon with sharp edges and a clean style gives you a confidence you can't fake. Whether it's for work, school, or a special event, a fresh cut tells the world you're ready. At our saloon, we don't just cut hair we boost confidence.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/freshhair.jpg",
   },
 
   {
@@ -258,7 +258,7 @@ export const blogs = [
     slug: "green-energy",
     excerpt:
       "From low fades to afro Tapers, classic crew cuts to waves, today's trends are bold but clean. The right style depends on your face shape and personality. Some cuts show maturity others highlight creativity but all leaves you looking fresh. Our barbers make sure you always leave with a trend that fits you.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/trendinghairstyles.JPG",
   },
 
   {
@@ -266,7 +266,7 @@ export const blogs = [
     slug: "live-sustainably",
     excerpt:
       "A beard is more than a facial hair, it's a statement. But without proper care, it quickly loses it's charm. With trimming, shaping, and a little beard oil, your look transfroms from rough to refined. Our gromming services keep your beard sharp and stylish no matter your style prefrences",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/beardgroom.jpg",
   },
 
   {
@@ -274,7 +274,7 @@ export const blogs = [
     slug: "green-energy",
     excerpt:
       "That fresh-from-the-barber look can last longer if you take care of it. Regular brushing, moisturizing, and avoiding harsh products go a long way. The right routine not only keeps your cut sharp but also keeps your hair healthy. We'll guide your on the best way to maintain your style until your next visit.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/longhair.jpg",
   },
 
   {
@@ -282,7 +282,7 @@ export const blogs = [
     slug: "live-sustainably",
     excerpt:
       "Cleaniness isn't just about appearance, it's about your health. Sterilized clippers, fresh towels and a neat enviroument protect you from infections and create comfort. That's why at our salon, hygiene is as important as the haircut itself",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/salon.jpg",
   },
 
   {
@@ -290,7 +290,7 @@ export const blogs = [
     slug: "green-energy",
     excerpt:
       "Strong hair starts with a healthy scalp. Problems like dandruff or dryness don't just affect your hair, they affect your confidence. Simple habits like washing, oiling, and scalp care can make a big diffrence. At our salon, we share tips and treatments to keep your hair looking it's best",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/hairscalp.jpg",
   },
 
   {
@@ -298,7 +298,7 @@ export const blogs = [
     slug: "live-sustainably",
     excerpt:
       "Your look should match the moment. A sharp fade for a party, a neat low cut for an interview, or a styled afro for a wedding, every event has a perfect haircut.We help you find the right look for the right time, so you always step out prepared.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/occa.jpg",
   },
 
   {
@@ -306,7 +306,7 @@ export const blogs = [
     slug: "green-energy",
     excerpt:
       "DIY cuts may look easy, but only a professional barber knows how to blend, shape, and style to perfection. Barbers understand diffrent air textures and face shapes, ensuring you get a look that truly suits you. Choosing a professional barber means choosing precision, and precision is what makes a haircut stand out.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/blogs/porbarb.jpg",
   },
 ];
 
@@ -339,7 +339,7 @@ export const items = [
     },
     {
       id: "4",
-      img: "./assets/img4.jpg",
+      img: "./assets/blogs/occa.jpg",
       url: "/",
       height: 300,
     },
@@ -351,7 +351,7 @@ export const items = [
     },
     {
       id: "6",
-      img: "./assets/img6.jpg",
+      img: "/assets/blogs/salon.jpg",
       url: "/",
       height: 400,
     },
@@ -369,7 +369,7 @@ export const items = [
     },
     {
       id: "9",
-      img: "./assets/img9.jpg",
+      img: "/assets/blogs/longhair.jpg",
       url: "/",
       height: 500,
     },
@@ -381,7 +381,7 @@ export const items = [
     },
     {
       id: "11",
-      img: "./assets/img7.jpg",
+      img: "./assets/blogs/beardgroom.jpg",
       url: "/",
       height: 200,
     },
