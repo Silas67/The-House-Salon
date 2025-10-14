@@ -9,7 +9,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Services() {
   return (
-    <div className="w-full flex items-center justify-center p-8 lg:py-44 h-full text-foreground">
+    <div className="w-full flex items-center justify-center px-8 lg:py-44 h-full text-foreground pb-36 pt-16">
       <motion.div
         variants={textSlide}
         initial="initial"
@@ -26,7 +26,7 @@ export default function Services() {
 
       {/* Heading */}
       <div className="flex flex-col items-center justify-center max-w-[100vw]">
-        <div className=" flex items-center justify-center flex-col max-sm:gap-8 gap-4 text-center max-sm:px-4">
+        <div className=" flex items-center justify-center flex-col max-sm:gap-16 gap-4 text-center max-sm:px-4">
           <SplitText className="Stardom-font text-3xl font-bold" duration={1}>
             What We Do
           </SplitText>

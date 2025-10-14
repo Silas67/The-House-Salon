@@ -30,7 +30,7 @@ export default function ProductsPage() {
             key={id}
             className=" flex flex-col items-center justify-center"
           >
-            <div className="relative w-[250px] h-[250px] overflow-hidden shadow-xl rounded-lg">
+            <div className="relative w-[300px] h-[300px] scale-[0.9] overflow-hidden shadow-xl rounded-lg">
               <Image
                 src={item.img}
                 alt={item.product || "Product image"}
