@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function BookingForm() {
   const [form, setForm] = useState({
@@ -16,6 +17,7 @@ export default function BookingForm() {
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const router = useRouter()
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -52,9 +54,10 @@ export default function BookingForm() {
 
       if (res.ok) {
         setSuccess(true);
-        alert("Booking successful!");
+        router.push("/")
+        console.log("Booking successful!");
       } else {
-        alert(`Error: ${data?.error || data?.message || "Bad Request"}`);
+        console.log(`Error: ${data?.error || data?.message || "Bad Request"}`);
       }
     } catch (error) {
       console.error("Network or server error:", error);
