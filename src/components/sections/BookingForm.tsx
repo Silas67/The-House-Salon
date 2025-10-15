@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import SuccessCheck from "@/components/common/SuccessCheck";
 
 export default function BookingForm() {
   const [form, setForm] = useState({
@@ -17,7 +18,8 @@ export default function BookingForm() {
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const router = useRouter()
+  const [showCheck, setShowCheck] = useState(false);
+  const router = useRouter();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -53,9 +55,12 @@ export default function BookingForm() {
       }
 
       if (res.ok) {
-        setSuccess(true);
-        router.push("/")
-        console.log("Booking successful!");
+        setShowCheck(true);
+        setTimeout(() => {
+          setShowCheck(false);
+          router.push("/");
+        }, 3000);
+        console.log("Booking Successful!")
       } else {
         console.log(`Error: ${data?.error || data?.message || "Bad Request"}`);
       }
@@ -124,19 +129,7 @@ export default function BookingForm() {
           {loading ? "Booking..." : "Book Appointment"}
         </button>
       </form>
-      {success && (
-        <AnimatePresence>
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 20, opacity: 0 }}
-            transition={{ duration: 1, ease: "anticipate" }}
-            className="text-green-600 mt-3 text-center"
-          >
-            Appointment booked successfully!
-          </motion.p>
-        </AnimatePresence>
-      )}
+      <SuccessCheck show={showCheck} />
     </div>
   );
 }
