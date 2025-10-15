@@ -129,7 +129,7 @@ export default function BookingForm() {
           {loading ? "Booking..." : "Book Appointment"}
         </button>
       </form>
-      <SuccessCheck show={showCheck} />y
+      <SuccessCheck show={showCheck} />
     </div>
   );
 }
