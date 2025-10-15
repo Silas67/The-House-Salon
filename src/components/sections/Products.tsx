@@ -16,8 +16,7 @@ export default function ProductsPage() {
           Our Collection
         </SplitText>
         <SplitText className=" max-w-2xl">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-          ad ratione eveniet, sunt impedit quisquam.
+          Explore our curated range of grooming styles and timeless looks, each crafted to reflect confidence, precision, and individuality.
         </SplitText>
       </div>
       <div className="grid lg:grid-cols-4 gap-12 p-4 w-full max-sm:grid-cols-1 md:grid-cols-2 place-content-center">

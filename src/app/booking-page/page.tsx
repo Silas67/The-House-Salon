@@ -10,7 +10,7 @@ export default function BookingPage() {
         <BookingForm />
         <div className="max-w-md space-y-4 py-12 px-4 flex items-center justify-center flex-col max-sm:text-center lg:items-start">
           <h1 className="uppercase max-w-[80%] Stardom-font text-4xl ">Make Your Reservation</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus minima laudantium soluta est repellat officia saepe aliquid nulla optio itaque, doloribus quis illum, illo dolorem sed, beatae deserunt ullam repudiandae!</p>
+          <p>Reserve your moment of luxury and precision. Book an appointment today and experience grooming crafted with care, style, and sophistication.</p>
         </div>
       </div>
 

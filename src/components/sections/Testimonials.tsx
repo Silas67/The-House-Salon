@@ -5,6 +5,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { testimonials, textSlide } from "../constant";
 import { motion } from "framer-motion";
 import SplitText from "../common/SplitText";
+import { FaStar } from "react-icons/fa";
 
 export default function Testimonials() {
   return (
@@ -46,8 +47,14 @@ export default function Testimonials() {
                 className="border border-muted-foreground rounded-md p-3"
               >
                 <p className="text-sm">{t.word}</p>
-                <p className="font-bold mt-4">{t.name}</p>
+                <div className="mt-4 space-y-2">
+                   <div className="flex items-center gap-[2px] text-muted">{[1,2,3,4,5].map((star,i) => (
+                  <div key={i} ><FaStar/></div>
+                ))}</div>
+                <p className="font-bold ">{t.name}</p>
                 <p className="text-xs text-muted-foreground">{t.job}</p>
+                </div>
+               
               </motion.div>
             ))}
           </Masonry>

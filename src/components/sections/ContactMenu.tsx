@@ -71,16 +71,7 @@ export const ContactMenu = () => {
         <div className="grid md:grid-cols-2 space-x-4 max-sm:space-y-14 m-4">
           <div>
             <h1 className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              facilis odit. Ea iusto laborum necessitatibus eum. Quam, est
-              iusto, nisi debitis officia quo repellat recusandae quis ratione
-              ipsam totam excepturi quisquam in facere tempora iure iste
-              asperiores tenetur harum! Mollitia veniam modi, tempora, dolore
-              doloremque laboriosam aperiam voluptate magnam inventore ut autem
-              illo et ab officia itaque dolor debitis facilis magni perspiciatis
-              temporibus cupiditate! Quos et praesentium qui voluptates
-              dignissimos, quaerat rem ducimus alias eum laudantium delectus
-              facilis porro nisi.
+              At The House, we believe great style begins with great people. If you’re creative, driven, and love helping others look and feel their best, we’d love to have you on our team. Step into a culture that inspires growth and celebrates skill.Be part of something that’s redefining grooming culture. The House isn’t just a salon — it’s a movement built by talented hands and visionary minds. Join our team and let your passion leave its mark.
             </h1>
           </div>
           <div className="relative w-[300px] h-[200px] ">
